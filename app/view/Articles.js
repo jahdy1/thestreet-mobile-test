@@ -24,6 +24,7 @@ Ext.define('GS.view.Articles', {
 								proxy: {
 										type: 'jsonp',
 										url: 'http://jahdy.com/apps/localproxy.php?url=http://ipad.api.thestreet.com/news/1/1.js?includeContent=true',
+										timeout: 5000,
 										reader: {
 												type: 'json',
 												rootProperty: 'response.articles'
